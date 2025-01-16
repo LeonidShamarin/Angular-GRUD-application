@@ -1,0 +1,73 @@
+<!-- src/app/features/users/users.component.html -->
+
+<div class="users-container">
+    <div class="header">
+      <h1>Users</h1>
+      <button mat-raised-button color="primary" (click)="openUserForm()">
+        Create User
+      </button>
+    </div>
+  
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- First Name Column -->
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef>First Name</th>
+        <td mat-cell *matCellDef="let user">{{user.firstName}}</td>
+      </ng-container>
+  
+      <!-- Last Name Column -->
+      <ng-container matColumnDef="lastName">
+        <th mat-header-cell *matHeaderCellDef>Last Name</th>
+        <td mat-cell *matCellDef="let user">{{user.lastName}}</td>
+      </ng-container>
+  
+      <!-- Email Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let user">{{user.email}}</td>
+      </ng-container>
+  
+      <!-- Created At Column -->
+      <ng-container matColumnDef="createdAt">
+        <th mat-header-cell *matHeaderCellDef>Created At</th>
+        <td mat-cell *matCellDef="let user">{{user.createdAt | dateFormat}}</td>
+      </ng-container>
+  
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef>Description</th>
+        <td mat-cell *matCellDef="let user">{{user.description}}</td>
+      </ng-container>
+  
+      <!-- Tags Column -->
+      <ng-container matColumnDef="tags">
+        <th mat-header-cell *matHeaderCellDef>Tags</th>
+        <td mat-cell *matCellDef="let user">
+          <mat-chip-set>
+            <mat-chip *ngFor="let tag of user.tags">{{tag}}</mat-chip>
+          </mat-chip-set>
+        </td>
+      </ng-container>
+  
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let user; let i = index">
+          <button mat-icon-button color="primary" (click)="openUserForm(user, i)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="confirmDelete(i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSize]="10" 
+                   [pageSizeOptions]="[5, 10, 25, 100]"
+                   showFirstLastButtons>
+    </mat-paginator>
+  </div>

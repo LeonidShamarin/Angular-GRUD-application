@@ -1,0 +1,42 @@
+/* src/styles.scss */
+
+@use '@angular/material' as mat;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography {
+  h1 {
+    margin: 0 0 16px;
+  }
+}
+
+/* Utility classes */
+.full-width {
+  width: 100%;
+}
+
+/* Dialog styles */
+.mat-dialog-container {
+  padding: 24px;
+}
+
+/* Table styles */
+.mat-table {
+  width: 100%;
+}
+
+.mat-row:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Form styles */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
