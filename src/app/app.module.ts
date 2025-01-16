@@ -17,9 +17,9 @@ import { SharedModule } from './shared/components/shared.module';
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule, // Додаємо анімації
-    MatToolbarModule, //
+    MatToolbarModule, 
     SharedModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent],
