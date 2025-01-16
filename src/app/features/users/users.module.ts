@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UsersComponent } from './users.component';
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '../../shared/components/shared.module';
 
 
 import { MatTableModule } from '@angular/material/table';

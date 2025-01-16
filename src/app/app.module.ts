@@ -7,7 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { SharedModule } from './shared/components/shared.module';
+import { SharedModule } from './shared/components/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule, // Додаємо анімації
     MatToolbarModule, //
-    // SharedModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],

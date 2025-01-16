@@ -1,7 +1,6 @@
-/* src/styles.scss */
+@use './custom-theme.scss';
 
-@use '@angular/material' as mat;
-
+// Global styles
 html, body {
   height: 100%;
   margin: 0;
@@ -20,23 +19,21 @@ html, body {
 }
 
 /* Dialog styles */
-.mat-dialog-container {
+.mat-mdc-dialog-container {
   padding: 24px;
 }
 
 /* Table styles */
-.mat-table {
+.mat-mdc-table {
   width: 100%;
 }
 
-.mat-row:hover {
+.mat-mdc-row:hover {
   background: rgba(0, 0, 0, 0.04);
 }
 
 /* Form styles */
-.mat-form-field {
+.mat-mdc-form-field {
   width: 100%;
   margin-bottom: 16px;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

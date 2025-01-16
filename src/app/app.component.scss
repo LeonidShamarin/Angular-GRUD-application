@@ -1,8 +1,18 @@
 :host {
-    display: block;
-    min-height: 100vh;
+  display: block;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+mat-toolbar {
+  margin-bottom: 16px;
+
+  a {
+    margin-left: 16px;
   }
-  
-  mat-toolbar {
-    margin-bottom: 16px;
-  }
+}
