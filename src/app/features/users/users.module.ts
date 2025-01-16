@@ -5,7 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { UsersComponent } from './users.component';
 import { SharedModule } from '../../shared/components/shared.module';
 
-
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,7 +22,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    RouterModule.forChild(routes), 
     ReactiveFormsModule,
     SharedModule,
     MatTableModule,
@@ -32,6 +31,7 @@ const routes: Routes = [
     MatIconModule,
     MatDialogModule,
     MatChipsModule
-  ]
+  ],
+  exports: [RouterModule] 
 })
 export class UsersModule { }
