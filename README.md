@@ -14,13 +14,13 @@ This is a CRUD application developed using Angular.
 
 ## Getting Started
 
-1. Clone the repository:
+1.Clone the repository:
 
 ```bash
 git clone [URL]
 ```
 
-2. Install dependencies:
+2.Install dependencies:
 
 ```bash
 
