@@ -1,3 +1,26 @@
+# Angular CRUD Application
+
+This is a CRUD application developed using Angular.
+
+## Features
+
+* Create, Read, Update, and Delete (CRUD) operations on user data.
+* Fetches data from a JSON file using HttpClient.
+* Displays user data in a table with pagination (10 items per page).
+* Uses Angular Material for pagination and form elements.
+* User form with validation for first name, last name, email, and description.
+* Tags can be added using chips, a comma-separated input field, or a multi-select.
+* Confirmation modal for deleting users.
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone [invalid URL removed]
+
+
+
 # AngularGRUDApplication
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
