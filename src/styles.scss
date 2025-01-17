@@ -1,7 +1,7 @@
-@use './custom-theme.scss';
+@use "./custom-theme.scss";
 
-// Global styles
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -13,17 +13,14 @@ html, body {
   }
 }
 
-/* Utility classes */
 .full-width {
   width: 100%;
 }
 
-/* Dialog styles */
 .mat-mdc-dialog-container {
   padding: 24px;
 }
 
-/* Table styles */
 .mat-mdc-table {
   width: 100%;
 }
@@ -32,7 +29,6 @@ html, body {
   background: rgba(0, 0, 0, 0.04);
 }
 
-/* Form styles */
 .mat-mdc-form-field {
   width: 100%;
   margin-bottom: 16px;
