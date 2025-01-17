@@ -17,7 +17,7 @@ This is a CRUD application developed using Angular.
 1. Clone the repository:
 
 ```bash
-git clone [invalid URL removed]
+git clone [URL]
 ```
 
 2. Install dependencies:
